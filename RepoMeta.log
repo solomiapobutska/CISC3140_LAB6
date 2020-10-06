@@ -1,0 +1,198 @@
+Last login: Mon Oct  5 20:59:47 on ttys000
+Solomiyas-MBP:~ solomiya$ cd Desktop/Repo1
+Solomiyas-MBP:Repo1 solomiya$ ls
+HelloWorld.java	README.md
+Solomiyas-MBP:Repo1 solomiya$ git intt
+git: 'intt' is not a git command. See 'git --help'.
+
+The most similar command is
+	init
+Solomiyas-MBP:Repo1 solomiya$ git init
+Reinitialized existing Git repository in /Users/solomiya/Desktop/Repo1/.git/
+Solomiyas-MBP:Repo1 solomiya$ git add .
+Solomiyas-MBP:Repo1 solomiya$ git commit 
+hint: Waiting for your editor to close the file... 
+[No write since last change]
+/bin/bash: q: command not found
+
+shell returned 127
+
+Press ENTER or type command to continue
+[No write since last change]
+/bin/bash: q: command not found
+
+shell returned 127
+
+Press ENTER or type command to continue
+[No write since last change]
+/bin/bash: qw: command not found
+
+shell returned 127
+
+Press ENTER or type command to continue
+[No write since last change]
+/bin/bash: q: command not found
+
+shell returned 127
+
+Press ENTER or type command to continue
+[No write since last change]
+/bin/bash: qw: command not found
+
+shell returned 127
+
+Press ENTER or type command to continue
+error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+Solomiyas-MBP:Repo1 solomiya$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   HelloWorld.java
+	new file:   README.md
+
+Solomiyas-MBP:Repo1 solomiya$ git commit -a
+[master (root-commit) f985dfa] My first commit
+ 2 files changed, 13 insertions(+)
+ create mode 100755 HelloWorld.java
+ create mode 100644 README.md
+Solomiyas-MBP:Repo1 solomiya$ git remote add origin https://github.com/solomiapobutska/CISC3140_LAB6.git
+fatal: remote origin already exists.
+Solomiyas-MBP:Repo1 solomiya$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/solomiapobutska/CISC3140_LAB6.git'
+Solomiyas-MBP:Repo1 solomiya$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 526 bytes | 263.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/solomiapobutska/CISC3140_LAB6.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Solomiyas-MBP:Repo1 solomiya$ git commit -a
+[master 623701a] Change to name to repo1
+ 2 files changed, 13 deletions(-)
+ delete mode 100755 HelloWorld.java
+ delete mode 100644 README.md
+Solomiyas-MBP:Repo1 solomiya$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 212 bytes | 212.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/solomiapobutska/CISC3140_LAB6.git
+   f985dfa..623701a  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Solomiyas-MBP:Repo1 solomiya$ ls
+Repo1
+Solomiyas-MBP:Repo1 solomiya$ git add repo1
+Solomiyas-MBP:Repo1 solomiya$ git commmit -a
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+Solomiyas-MBP:Repo1 solomiya$ git commit -a
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+	Repo1/
+
+nothing added to commit but untracked files present
+Solomiyas-MBP:Repo1 solomiya$ git push -u origin master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Everything up-to-date
+Solomiyas-MBP:Repo1 solomiya$ git push -u origin master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Everything up-to-date
+Solomiyas-MBP:Repo1 solomiya$ git remote add origin https://github.com/solomiapobutska/CISC3140_LAB6.git
+fatal: remote origin already exists.
+Solomiyas-MBP:Repo1 solomiya$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Repo1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+Solomiyas-MBP:Repo1 solomiya$ ls
+Repo1
+Solomiyas-MBP:Repo1 solomiya$ cd repo1
+Solomiyas-MBP:repo1 solomiya$ ls
+HelloWorld.java	README.md
+Solomiyas-MBP:repo1 solomiya$ git commit -a
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+	./
+
+nothing added to commit but untracked files present
+Solomiyas-MBP:repo1 solomiya$ git add HelloWorld.java README.md
+Solomiyas-MBP:repo1 solomiya$ git commit -a
+[master 1433e33] Files added
+ 2 files changed, 13 insertions(+)
+ create mode 100755 Repo1/HelloWorld.java
+ create mode 100644 Repo1/README.md
+Solomiyas-MBP:repo1 solomiya$ git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 601 bytes | 200.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/solomiapobutska/CISC3140_LAB6.git
+   623701a..1433e33  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Solomiyas-MBP:repo1 solomiya$ git log
+commit 1433e3318752e676fc44417791fba65f627625c2 (HEAD -> master, origin/master)
+Author: Solomiya Pobutska <solomiyapobutskaua@gmail.com>
+Date:   Mon Oct 5 21:19:51 2020 -0400
+
+    Files added
+
+commit 623701a80f2c9fd83b79dfb62b8185dda678e320
+Author: Solomiya Pobutska <solomiyapobutskaua@gmail.com>
+Date:   Mon Oct 5 21:15:03 2020 -0400
+
+    Change to name to repo1
+
+commit f985dfa60ff9fceb9c8d2822632e6ac2d7276c1d
+Author: Solomiya Pobutska <solomiyapobutskaua@gmail.com>
+Date:   Mon Oct 5 21:10:04 2020 -0400
+
+    My first commit
+Solomiyas-MBP:repo1 solomiya$ git log_p
+git: 'log_p' is not a git command. See 'git --help'.
+Solomiyas-MBP:repo1 solomiya$ git log -p
+commit 1433e3318752e676fc44417791fba65f627625c2 (HEAD -> master, origin/master)
+Author: Solomiya Pobutska <solomiyapobutskaua@gmail.com>
+Date:   Mon Oct 5 21:19:51 2020 -0400
+
+    Files added
+
+diff --git a/Repo1/HelloWorld.java b/Repo1/HelloWorld.java
+new file mode 100755
+index 0000000..3a16ec3
+--- /dev/null
++++ b/Repo1/HelloWorld.java
+@@ -0,0 +1,10 @@
++import java.util.Date;
++public class HelloWorld
++{
++  public static void main (String [] args)
++  {
++    System.out.println("Hello World!");
++    SimpleDateFormat f = new SimpleDateFormat("MM-dd-yyyy HH:mm:ss z");
++    System.out.println(f.format(new Date()));
++  }
++}
+diff --git a/Repo1/README.md b/Repo1/README.md
+:
